@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgaria Mary</title>
+        
+        <!--Style CSS-->
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/Responsividade_max_799px.css">
+    <link rel="stylesheet" href="./CSS/min_width_800px.css">
+    
+        <!--Bootstrap-->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animacoes.css">
+</head>
+<body id="body">
+
+    <!--Start Header-->
+    <header id="header-principal" >
+        <section id="section-da-header">
+          
+
+                <span onclick="MenuDrop()" id="span-ico-menu"  class="glyphicon glyphicon-align-justify"></span>
+    
+            <div id="div-menu-dropdown">
+                <span  id="span-ico-menu-drop1"  class="glyphicon glyphicon-home"><span id="span-menu-espaco">Home</span></span>
+                <span  id="span-ico-menu-drop2"  class="glyphicon glyphicon-list-alt class-menu"><span id="span-menu-espaco">Sobre</span></span>
+                <span  id="span-ico-menu-drop3"  class="glyphicon glyphicon-user class-menu" ><span id="span-menu-espaco">Familiar</span></span>
+                <span  id="span-ico-menu-drop4"  class="glyphicon glyphicon-phone class-menu"><span id="span-menu-espaco">Contactar</span></span>
+                <span  id="span-ico-menu-drop5"  class="glyphicon glyphicon-shopping-cart class-menu"><span id="span-menu-espaco">Loja</span></span>
+            </div>
+
+            <img src="./Assets/logo-de-cima.jpg" alt="imagem logo" id="img-lotipo">
+                         
+        <!--Start Nav-->
+        <nav id="nav">
+            <!--Start ul-->
+            <ul id="ul-screen-701px" class="col-sm-11">
+                <!--Start Link´s-->
+                <a href="Index.html" id="link-menu">
+                    <li id="li-screen-701px"> 
+                       <span id="span-icon" class="glyphicon glyphicon-home"></span> <!--Icon 1 Menu-->
+                        Home
+                    </li>
+                </a>
+                <a href="#" id="link-menu">
+                    <li id="li-screen-701px">
+                         <span id="span-icon" class="glyphicon glyphicon-list-alt"></span><!--Icon 2 Menu-->
+                         Sobre
+                    </li>
+                </a>
+                <a href="#" id="link-menu">
+                    <li id="li-screen-701px">
+                        <span id="span-icon" class="glyphicon glyphicon-shopping-cart"></span><!--Icon 3 Menu-->
+                        Lojas
+                    </li>
+                </a>
+                <a href="#" id="link-menu">
+                    <li id="li-screen-701px">
+                        <span id="span-icon" class="glyphicon glyphicon-user"></span><!--Icon 4 Menu-->
+                        Familiar
+                    </li>
+                </a>
+                <a href="#" id="link-menu">
+                    <li id="li-screen-701px">
+                        <span id="span-icon" class="glyphicon glyphicon-phone"></span><!--Icon 5 Menu-->
+                        Contactos
+                    </li>
+                </a>
+                <!--End Link´s-->
+            </ul>
+            <!--End ul-->
+        </nav>
+        <!--End Nav-->
+        </section>
+
+
+        <!--Start Div Painel publicitário-->
+        <div id="div-painel">
+            <p id="paragrafo-painel">
+                <span id="Palavra-1"> Seja Bem-Vindo! </span> <br>
+                <span id="Palavra-2">Saborea do Melhor </span> <br>
+                <span id="Palavra-3">Hamburguer da Cidade!</span> <br>
+                
+            </p>
+            <button id="btn-encomendar-agora">
+                <span id="span-icon-painel" class="glyphicon glyphicon-hand-right"></span>
+                  Encomendar
+                <span id="span-icon-painel" class="glyphicon glyphicon-hand-left"></span> 
+            </button>
+        </div>
+        <!--End Div Painel publicitário-->
+    </header>
+    <!--End Header-->
+
+    <!--Start Main-->
+    <main class="container-fluid">
+
+        <!--Start Hamburg Front Back Full-->
+        <section id="section-ofertas">
+                <!--Start Div Hamburguer Front-->
+                <div class="container" id="div-ofertas-1">
+                    <div id="div-h2-ofertas">
+                            
+                        <span onclick="adicionar1()" id="span-icon-ofertas_1" class="glyphicon glyphicon-heart  span-icon-ofertas"></span> 
+                    </div>
+                    <h2 id="h2-ofertas">Hamburguer Front</h2>
+                    
+                    <div id="div-btn-ofertas">
+                        <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                        <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                    </div>
+                </div>
+                <!--End Div Hamburguer Front-->
+    
+                <!--Start Div Hamburguer Back-->
+               <div class="container" id="div-ofertas-2">
+                    <div id="div-h2-ofertas">
+                            
+                        <span onclick="adicionar2()" id="span-icon-ofertas_2" class="glyphicon glyphicon-heart span-icon-ofertas"></span> 
+                    </div>
+                    <h2 id="h2-ofertas">Hamburguer Back</h2>
+                    
+                    <div id="div-btn-ofertas">
+                        <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                        <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                    </div>
+                </div>
+                <!--End Div Hamburguer Back-->
+    
+                <!--Start Div Hamburguer Full-->
+                <div class="container" id="div-ofertas-3">
+                    <div id="div-h2-ofertas">
+                            
+                        <span onclick="adicionar3()" id="span-icon-ofertas_3" class="glyphicon glyphicon-heart  span-icon-ofertas"></span> 
+                    </div>
+                    <h2 id="h2-ofertas">Hamburguer Full</h2>
+                    
+                    <div id="div-btn-ofertas">
+                        <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                        <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                    </div>
+                </div>
+                <!--Start Div Hamburguer Full-->
+        </section>
+        <!--End Hamburg Front Back Full-->
+
+        <!--Start Hamburg Familiar-->
+        <section class="container-fluid" id="section-familiar">
+            <div class="container" id="div-slider-familiar">
+                <h2 id="h2-familiar">Hamburguer Familiar</h2>
+                <p id="paragrafo-familiar">
+                    O Hamburguer familiar é o 
+                    melhor pacote para sua família <br>
+                    Encomende agora mesmo e sinta 
+                    o prazer do sabor!
+                </p>
+                <div id="div-btn-familiar">
+                    <button class="btn btn-default" id="btn-familiar-1">Encomendar</button>
+                    <button class="btn btn-default" id="btn-familiar-2">Ver mais</button>
+                </div>
+            </div>
+        </section>
+                <!--End Hamburg Familiar-->
+
+                <!--Start Hamburg Junior Pleno Senior-->
+        <section id="section-ofertas">
+            <!--Start Div Hamburguer Junior-->
+            <div class="container" id="div-ofertas-4">
+                <div id="div-h2-ofertas">
+                        
+                    <span onclick="adicionar4()" id="span-icon-ofertas_4" class="glyphicon glyphicon-heart  span-icon-ofertas"></span> 
+                </div>
+                <h2 id="h2-ofertas">Hamburguer Junior</h2>
+                
+                <div id="div-btn-ofertas">
+                    <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                    <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                </div>
+            </div>
+            <!--End Div Hamburguer Junior-->
+
+            <!--Start Div Hamburguer Pleno-->
+           <div class="container" id="div-ofertas-5">
+                <div id="div-h2-ofertas">
+                        
+                    <span onclick="adicionar5()" id="span-icon-ofertas_5" class="glyphicon glyphicon-heart span-icon-ofertas"></span> 
+                </div>
+                <h2 id="h2-ofertas">Hamburguer Pleno</h2>
+                
+                <div id="div-btn-ofertas">
+                    <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                    <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                </div>
+            </div>
+            <!--End Div Hamburguer Pleno-->
+
+            <!--Start Div Hamburguer Senior-->
+            <div class="container" id="div-ofertas-6">
+                <div id="div-h2-ofertas">
+                        
+                    <span onclick="adicionar6()" id="span-icon-ofertas_6" class="glyphicon glyphicon-heart  span-icon-ofertas"></span> 
+                </div>
+                <h2 id="h2-ofertas">Hamburguer Senior</h2>
+                
+                <div id="div-btn-ofertas">
+                    <button class="btn btn-default" id="btn-ofertas">Encomendar</button>
+                    <button class="btn btn-default" id="btn-ofertas-2">Ver mais</button>
+                </div>
+            </div>
+            <!--End Div Hamburguer Senior-->
+    </section>
+    <!--End Hamburg Junior Pleno Senior-->
+
+
+            <!--Start Hamburg Promocionais-->
+        <section class="container-fluid" id="section-promocionais">
+            <!--End Div Hamburguer Promocionais Título-->
+            <div id="div-1-promocionais">
+                <div id="div-2-promocionais">
+                    <hr id="hr-titulo">
+                    <h2 id="h2-Promocionais">Hamburguer Promocionais</h2>
+                    <hr id="hr-titulo">
+                </div>
+            </div>
+            <!--End Div Hamburguer Promocionais Título-->
+            
+            <!--Start Article Hamburguer Promocionais-->
+            <article class="container-fluid" id="article-promocionais">
+                <!--Start Hamburguer Promocionais nº 01-->
+                <div class="col-sm-4" id="div-hamburguers-promocionais">
+                    <img class="col-sm-12" src="./Assets/image 5.jpg" id="img-promocionais-hamburg">
+                    <hr id="hr">
+                    <p id="paragrafo-promocionais-hamburg">
+                                Barbecue salad
+                        Some quick example text to build 
+                        on the card title and make up the
+                            bulk of the card's content.
+                    </p>
+                    <span id="span-leia-mais">
+                        <span id="span-icon-leia-mais" class="glyphicon glyphicon-folder-open"></span>
+                        <h6>
+                            Ver mais
+                        </h6>
+                    </span>
+                </div>
+                <!--End Hamburguer Promocionais nº 01-->
+
+                <!--Start Hamburguer Promocionais nº 02-->
+                <div class="col-sm-4" id="div-hamburguers-promocionais">
+                    <img class="col-sm-12" src="./Assets/image 6.jpg" id="img-promocionais-hamburg">
+                    <hr id="hr">
+                    <p id="paragrafo-promocionais-hamburg">
+                        Barbecue salad
+                        Some quick example text to build 
+                        on the card title and make up the
+                            bulk of the card's content.
+                    </p>
+                    <span id="span-leia-mais">
+                        <span id="span-icon-leia-mais" class="glyphicon glyphicon-folder-open"></span>
+                        <h6>
+                            Ver mais
+                        </h6>
+                    </span>
+                </div>
+                <!--End Hamburguer Promocionais nº 02-->
+
+                <!--Start Hamburguer Promocionais nº 03-->
+                <div class="col-sm-4" id="div-hamburguers-promocionais">
+                    <img class="col-sm-12" src="./Assets/image 7.jpg" id="img-promocionais-hamburg">
+                    <hr id="hr">
+                    <p id="paragrafo-promocionais-hamburg">
+                        Barbecue salad
+                        Some quick example text to build 
+                        on the card title and make up the
+                            bulk of the card's content.
+                    </p>
+                    <span id="span-leia-mais">
+                        <span id="span-icon-leia-mais" class="glyphicon glyphicon-folder-open"></span>
+                        <h6>
+                            Ver mais
+                        </h6>
+                    </span>
+                </div>
+                <!--End Hamburguer Promocionais nº 03-->
+            </article>
+            <!--End Article Hamburguer Promocionais-->
+
+        </section>
+        <!--End Hamburg Promocionais-->
+    </main>
+    <!--End Main-->
+            
+    <!--Start Sobre nós-->
+    <section class="container" id="section-sobre-nos">
+        <div class="col-sm-6" id="div-sobre-nos-1">
+            <img class="col-sm-12" src="./Assets/quem-somos-1.jpg" id="img-quem-somos" alt="Imagem de Hamburguers">
+        </div>
+        <div class="col-sm-6" id="div-sobre-nos">
+            <h2 id="h2-sobre-nos">SOBRE NÓS</h2>
+            <p id="paragrafo-sobre-nos">
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy a 
+                de gs good ever since the 1500s, when an unknown printer tooke
+                galley of type and scrambled it to make a type specimen book. Its 
+                has survived not only five centuries, but also the leap into choose 
+                electronic typesetting, remaining essentially unchanged. It was of
+                popularised in the 1960s with the release of Letraset sheets conte 
+                ining  Lorem Ipsum passages, and more recently with desktop pue
+                lishing software like Aldus PageMaker including versions of Lores 
+                Ipsum.is simply dummy text of the printing and typesetting industr
+                 
+            </p>
+        </div>
+    </section>
+    <!--End Sobre nós-->    
+
+    <!--Start Footer-->
+    <footer id="footer">
+        <!--Start Desenvolvido Por-->
+        <div class="col-sm-5" id="div-dev-footer">
+            <h2 id="h2-texto-quem-somos"> Desenvolvedor:</h2>
+            <div id="div-dev-2">
+                <div id="div-animeBorder-img">
+                    <img src="./Assets/junior.jpg" id="img-dev">
+                </div>
+                <p id="paragrafo-dev">
+                    Júnior Bengue<br>
+                    Dev Front-End
+
+                </p>
+            </div>
+        </div>
+        <!--End Desenvolvido Por-->        
+
+        <!--Start Quem Somos?-->                    
+        <div class="col-sm-4" id="div-quem-somos-footer">
+            <h2 id="h2-texto-quem-somos"> Quem Somos?</h2>
+            <p id="paragrafo-quem-somos">
+                Barbecue salad Some quick example
+                text to a build on the card title a make 
+                up the bulk of the for the a card content. 
+            </p>
+        </div>
+        <!--Start Quem Somos?-->        
+
+        <!--Start Contacte-nos-->
+        <div class="col-sm-3" id="div-contacte-nos">
+            <h2 id="h2-texto-quem-somos"> Conatcte-nos</h2>
+            <span id="span-contactos"> <span id="span-icon-contactos" class="glyphicon glyphicon-phone"></span>+244 994 543 041</span>
+            <span id="span-contactos"> <span id="span-icon-contactos" class="glyphicon glyphicon-phone"></span>+244 994 543 041</span>
+            <span id="span-contactos"> <span id="span-icon-contactos" class="glyphicon glyphicon-home"></span>Luanda - Angola</span>
+        </div>
+        <!--End Contacte-nos-->
+    </footer>
+    <!--End footer-->
+
+
+    <!--Start Bootstrap.js-->
+    <link rel="stylesheet" href="./Bootstrap/fonts/glyphicons-halflings-regular.svg">
+    <link rel="stylesheet" href="./Bootstrap/fonts/glyphicons-halflings-regular.eot">
+    <script rel="stylesheet" href="./Bootstrap/js/bootstrap.min.js"></script>
+    <!--End Bootstrap.js-->
+    
+    <!--Start JavaScript-->
+    <script src="./JS/Script.js"></script>
+    <!--End JavaScript-->
+</body>
+</html>

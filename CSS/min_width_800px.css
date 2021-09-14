@@ -1,0 +1,942 @@
+
+
+@media only screen and (min-width:800px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-color: black;
+    }
+    
+    /*-------------Componentes que apenas fazem parte da tela maxima de 700px --------------*/
+    #span-ico-menu{
+        display: none;
+    }
+
+    #div-menu-dropdown{
+        display: none;
+    }
+    
+    #span-ico-menu-drop1{
+        display: none;
+    }
+
+    #span-ico-menu-drop2{
+        display: none;
+    }
+    
+    #span-ico-menu-drop3{
+        display: none;
+    }
+
+    #span-ico-menu-drop4{
+        display: none;
+    }
+
+    #span-ico-menu-drop5{
+        display: none;
+    }
+    /*-----Start Conponentes da Heeder-----*/
+    
+    #btn-encomendar-agora{
+        background-color: rgba(38, 38, 34, 0.494);
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        position: absolute;
+        font-family: cursive;
+        border-radius: 100px;
+        border: 2px solid rgb(255, 166, 0);
+        margin-top: 305px;
+        margin-left: 20%;
+        width: 200px;
+        height: 30px;
+        line-height: 6vh;
+        box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+        cursor: pointer;
+        animation: btn-encomendar-agora;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes btn-encomendar-agora{
+        0%{
+            box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+        }
+        50%{
+            box-shadow: 0px 0px 60px 0px rgb(255, 166, 0);
+        }
+        100%{
+            box-shadow: 0px 0px 80px 0px rgb(255, 166, 0);
+        }
+    }
+    
+    #btn-encomendar-agora:hover{
+        transition: all 10s 0s;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+    }
+    
+    #paragrafo-painel{
+        position: absolute;
+        color: rgb(255, 166, 0);
+        margin-top: 130px;
+        margin-left: 17%;
+        font-size: 36px;
+        font-family: cursive;
+        animation-name: animationTextHeader;
+        animation-timing-function: ease-in-out;
+        animation-duration: 05s;
+        transition: animation 05s 0s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animationTextHeader {
+        from{
+            transform: translateY(200%);
+        }
+        to{
+
+        }
+    }
+    
+    #span-icon-painel{
+        color: rgb(255, 166, 0);
+        margin: 8px;
+    }
+    
+    
+    #header-principal{
+        width: 100%;
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.426);
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 100px 0px rgb(255, 166, 0);
+        justify-content: space-between;
+    }
+    
+    #section-da-header{
+        width: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.796);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.426);
+        flex-direction: row;
+        position: absolute;
+        position: fixed;
+        z-index: 999;
+        align-items: center;
+        border-bottom: 1.5px solid rgb(255, 166, 0);
+        justify-content: space-between;
+    }
+    
+    #img-lotipo{
+        width: 50px;
+        transition: tranform 05s 0s ease-in-out;
+        animation: animationLogo;
+        animation-duration: 08s;
+        animation-iteration-count: infinite;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 100px;
+        margin-left: 100px;
+        box-shadow: 0px 0px 20px 0px rgb(255, 166, 0);
+    }
+
+    #img-lotipo:hover{
+        cursor: pointer;
+        animation: none;
+    }
+
+
+    @keyframes animationLogo{
+        0%{
+            transform: rotateY(360deg);
+        }
+    }
+    
+    ul, li{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    ul{
+        margin-right: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 6px 0px rgb(255, 166, 0);
+        height: 50px;
+        transition: animation 05s 0s ease-in-out;
+        animation-name: ul-header;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes ul-header{
+        0%{
+            box-shadow: 0px 0px 20px 0px rgb(255, 166, 0);
+        }
+        50%{
+            box-shadow: 0px 0px 1px 0px rgb(255, 166, 0);
+        }
+        100%{
+            box-shadow: 0px 0px 20px 0px rgb(255, 166, 0);
+        }
+    }
+    
+    li:hover #span-icon{
+        color: rgb(255, 166, 0);
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    li:hover{
+        text-decoration: none;
+        color: rgb(255, 166, 0);
+    }
+    
+    li{
+        text-decoration: none;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-right: 30px;
+    }
+    
+    
+    #span-icon{
+        font-size: 10px;
+        color: white;
+        margin-right: 5px;
+    }
+    
+    #div-painel{
+        width: 100%;
+        height: 450px;
+        overflow-y: hidden;
+        position: relative;
+        background-image: url("../Assets/image-painel.jpg");
+        background-size: cover;
+        animation: animacaoPainel;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+    }
+    
+    #span-ico-menu{
+        display: none;
+        color: white;
+        font-size: 25px;
+        margin-left: 14px;
+    }
+    
+    @keyframes animacaoPainel{
+        14%{
+    
+            background-image: url("../Assets/image_11.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    
+    /*-----End Conponentes da Heeder-----*/
+    
+    
+    /*------Start Conponentes da Main-------*/
+    
+    #section-promocionais{
+        width: 100%;
+        height: 500px;
+        background-image: url("../Assets/hamburgue-menu-2.jpg");
+        background-size: cover;
+        overflow-y: hidden;
+        background-repeat: no-repeat;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    #span-icon-menu{
+        color: white;
+        font-size: 25px;
+        margin-left: 14px;
+    }
+    
+    #img-promocionais-hamburg{
+
+        width: 90%;
+        border-radius: 100%;
+        margin-top: 2px;
+        top: 10px;
+        animation-name: animacao3;
+        animation-timing-function: initial;
+        animation-duration: 01s;
+        animation-play-state: initial;
+    }
+    
+    #paragrafo-promocionais-hamburg{
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 6px;
+        color: black;
+        font-size: 16px;
+        left: 10px;
+        animation-name: bounce;
+        animation-timing-function: initial;
+        transition-delay: 0s;
+        animation-duration: 01s;
+        animation-play-state: initial;
+    }
+    
+    #hr{
+        width: 100px;
+        height: 2px;
+        border-color: rgb(255, 166, 0);
+        box-shadow: 0px 0px 16px 0px rgb(255, 166, 0);
+        margin-bottom: 0px;
+    }
+    
+    #span-leia-mais{
+        height: 20px;
+        width: 100%;
+        background-color: rgb(216, 215, 215);
+        color: rgb(29, 29, 28);
+        margin-bottom: 10px;
+        padding-top: 8px;
+        border-radius: 5px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        display: flex;
+        float: right;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #span-icon-leia-mais{
+        font-size: 11px;
+        color: rgba(14, 14, 13, 0.597);
+        margin-bottom: 3px;
+        margin-right: 5px;
+    }
+    
+    
+    
+    
+    #hr-titulo{
+        width: 18%;
+        height: 2px;
+        margin-top: 10px;
+        background-color: white;
+        color: white;
+    }
+    
+    #div-1-promocionais{
+        width: 100%;
+        background-image: url("../Assets/image-background-promocionais.jpg");
+        background-position: left;
+        background-repeat: no-repeat;
+        display: flex;
+        border-bottom: 1px solid rgba(255, 166, 0, 0.597);
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        box-shadow: 0px 0px 10px 0px rgba(255, 166, 0, 0.597);
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        animation-name: ul-header;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    
+    #div-2-promocionais{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.597);
+    }
+    
+    h6{
+        color: rgb(162, 22, 22);
+        font-size: 10px;
+        margin-top: 2px;
+        margin-left: 4px;
+    }
+    
+    #h2-Promocionais{
+        color: white;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #div-hamburguers-promocionais{
+        width: 30%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    
+    #article-promocionais{
+        height: 100%;
+        width: 91%;
+        border-bottom: 1px solid  rgba(255, 166, 0, 0.597);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.597);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*--------Start Section Ofertas---------*/
+    
+    #section-ofertas{
+        background-color: rgba(233, 227, 181, 0);
+        width: 100%;
+        height: 220px;
+        margin-top: 30px;
+        border-top: 1px solid rgba(128, 128, 128, 0.268);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.268);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    
+    #div-ofertas-1{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image 1.jpg");
+    }
+    
+    
+    #div-ofertas-2{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image-18.jpg");
+    }
+    
+    
+    #div-ofertas-3{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image_10.jpg");
+    }
+    
+    
+    #div-ofertas-4{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image\ 3.jpg");
+    }
+    
+    
+    #div-ofertas-5{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image\ 9.jpg");
+    }
+    
+    
+    #div-ofertas-6{
+        border-top: 1px solid rgba(255, 166, 0, 0.597);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        height: 90%;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image\ 14.png");
+    }
+    
+    
+    #h2-ofertas{
+        font-size: 20px;
+        font-style:oblique;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        color: white;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.398);
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 5px;
+        font-weight: 800;
+    }
+    
+    #btn-ofertas{
+        background-color: rgb(255, 166, 0);
+        color: white;
+        border: 0px;
+        border-radius: 20px;
+        font-weight: bold;
+        width: 49.5%;
+        height: 20px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+        cursor: pointer;
+        animation: btn-encomendar-agora;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    #btn-ofertas:hover{
+        transition: all 10s 0s;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+    }
+    
+    #btn-ofertas-2{
+        background-color: rgba(255, 166, 0, 0);
+        color: rgb(255, 166, 0);
+        border: 1px solid rgb(255, 166, 0);
+        border-radius: 20px;
+        width: 33%;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .span-icon-ofertas{
+        float: right;
+        cursor: pointer;
+        color: white;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    #div-h2-ofertas{
+        display: flex;
+        flex-direction: row;
+        justify-content:right;
+    }
+    
+    #btn-ofertas-2:hover{
+        transition:  all 5s 0s;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+    }
+    
+    #div-btn-ofertas{
+        width: 100%;
+        height: 34px;
+        margin-top: 130px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.57);
+    }
+    
+    #btn-familiar-slider-1{
+        width: 30px;
+    } 
+    
+    #btn-familiar-slider-2{
+        width: 30px;
+    }
+    
+    #btn-familiar-slider-3{
+        width: 30px;
+    }
+    /*---------End Section Ofertas----------*/
+    
+    /*---------Start Hamburguer Familiar----------*/
+    #section-familiar{
+        background-color: rgb(0, 0, 0);
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    
+    #div-slider-familiar{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        margin-top: 12px;
+        height: 370px;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/image_13.jpg");
+    }
+    
+    #div-btn-slider{
+        height: 50px;
+        background-color: white;
+    }
+    
+    #h2-familiar{
+        font-size: 40px;
+        font-style:oblique;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        color: white;
+        font-weight: 800;
+    }
+    
+    #paragrafo-familiar{
+        color: rgb(255, 206, 142);
+    }
+    
+    #btn-familiar-1{
+        background-color: rgb(255, 166, 0);
+        color: white;
+        border: 0px;
+        border-radius: 20px;
+        width: 176px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        height: 30px;
+        box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+        cursor: pointer;
+        animation: btn-encomendar-agora;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    #btn-familiar-1:hover{
+        transition: all 10s 0s;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+    }
+    
+    #btn-familiar-2{
+        background-color: rgba(24, 23, 22, 0.522);
+        color: rgb(255, 166, 0);
+        border: 1px solid rgb(255, 166, 0);
+        border-radius: 20px;
+        width: 176px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        height: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    #btn-familiar-2:hover{
+        transition:  all 5s 0s;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+    }
+    /*---------End Hamburguer Familiar----------*/
+    
+    
+    /*-----Start Conponentes de Sobre Nós-----*/
+    #section-sobre-nos{
+        width: 97.8%;
+        height: 460px;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        background-color:white;
+        display: flex;
+        overflow-y: hidden;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    
+    #paragrafo-sobre-nos{
+        color: black;
+        overflow-y: scroll;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+    }
+    
+    #h2-sobre-nos{
+
+        color: black;
+        margin-top: 10px;
+    }
+    
+    #div-sobre-nos-1{
+        height: 340px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+        left: 10px;
+        animation-name: animacao;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-iteration-count: initial;
+    }
+    
+    #img-quem-somos{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #div-sobre-nos{
+        height: 340px;
+        width: 44%;
+        right: 10px;
+        overflow-y: hidden;
+        animation-name: animacao-2;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-iteration-count: initial;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+    }
+    
+    /*-----End Conponentes de Sobre Nós-----*/
+    
+    /*-------End Conponentes da Main-------*/
+    
+    
+    
+    
+    
+    
+    #footer{
+        height: 160px;
+        box-shadow: 0px 0px 40px 0px rgb(255, 166, 0);
+        border-top: 2px solid rgb(255, 166, 0);
+        background-color: rgb(36, 38, 43);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #div-quem-somos-footer{
+        width: 250px;
+        height: 150px;
+    }
+    
+    
+    #div-dev-footer{
+        width: 350px;
+        height: 150px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #paragrafo-dev{
+        height: 100%;
+        width: 56%;
+        display: flex;
+        align-items: center;
+        padding-left: 6px;
+        color: rgb(255, 206, 142);
+    }
+    
+    #img-dev{
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        
+    }
+    
+    #div-animeBorder-img{
+        width: 68px;
+        height: 71px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        animation-name: animeBorder;
+        animation-timing-function: ease-in-out;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: normal; 
+    }
+    
+    @keyframes animeBorder {
+        0% {
+            background-color: rgb(235, 176, 66);
+        }
+        10% {
+            background-color: rgb(238, 80, 80);
+        }
+        20% {
+            background-color: rgb(66, 196, 235);
+        }
+        30% {
+            background-color: rgb(235, 66, 159);
+        }
+        40% {
+            background-color: rgb(66, 235, 170);
+        }
+        50% {
+            background-color: rgb(66, 139, 235);
+        }
+        60% {
+            background-color: rgb(166, 202, 107);
+        }
+        70% {
+            background-color: rgb(235, 66, 187);
+        }
+    }
+    
+    #div-dev-2{
+        width: 58%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #h2-texto-quem-somos{
+        color: rgb(255, 166, 0);
+        font-size: 18px;
+    }
+    #paragrafo-quem-somos{
+        color: rgb(255, 206, 142);
+        font-size: 12px;
+    }
+    
+    #div-redes-sociais{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #span-contactos{
+        color: rgb(235, 176, 66);
+        font-size: 12px;
+    }
+    
+    #span-icon-contactos{
+        color: rgb(235, 176, 66);
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    
+    #div-contacte-nos{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+    }
+    
+    #div-redes-sociais-mae{
+        width: 250px;
+        height: 110px;
+    }
+}
